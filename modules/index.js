@@ -1,4 +1,4 @@
-const User = require('./User');
+const User = require('./user');
 const Person = require('./Person');
 const Product = require('./Product');
 const Project = require('./Project');
@@ -6,7 +6,6 @@ const Comments = require('./Comments');
 const ShoppingCart = require('./ShoppingCart');
 const sequelize = require('../db/connection');
 
-// קשרים של User
 User.hasOne(ShoppingCart, { foreignKey: 'userId' });
 ShoppingCart.belongsTo(User, { foreignKey: 'userId' });
 

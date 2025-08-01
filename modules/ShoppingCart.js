@@ -7,6 +7,10 @@ const ShoppingCart = sequelize.define('ShoppingCart', {
     autoIncrement: true,
     primaryKey: true,
   },
+  userId: {
+  type: DataTypes.INTEGER,
+  allowNull: false,
+  },
   quantity: {
     type: DataTypes.INTEGER,
     allowNull: false,
