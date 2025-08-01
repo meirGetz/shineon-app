@@ -7,6 +7,14 @@ const Comments = sequelize.define('Comments', {
     autoIncrement: true,
     primaryKey: true,
   },
+  userId: {
+  type: DataTypes.INTEGER,
+  allowNull: false,
+  },
+  personId: {
+  type: DataTypes.INTEGER,
+  allowNull: false,
+  },
   date: {
     type: DataTypes.DATE,
     allowNull: false,
